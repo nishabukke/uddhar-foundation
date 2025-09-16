@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1600px;
+    margin: 0px auto;
+    color: #191919;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: #f7f8f9;
+}
+
+@font-face {
+  font-family: headingFont;
+  src: url('fonts/BooksellerBk-AmpleBold.ttf');
+}
+
+@font-face {
+  font-family: smallHeadingFont;
+  src: url('fonts/BooksellerBk-Regular.ttf');
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.section-lg{
+    padding: 50px 30px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.common-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    margin: 0px auto;
+    gap: 20px;
+}
+
+.small-heading{
+    font-family: headingFont;
+    text-transform: uppercase;
+    background: #91BD41;
+    background: -webkit-linear-gradient(90deg,rgba(145, 189, 65, 1) 0%, rgba(74, 159, 61, 1) 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.common-heading h2{
+    font-family: headingFont;
+    font-size: 38px;
+    text-align: center;
+    background: #266DB7;
+    background: -webkit-linear-gradient(90deg,rgba(38, 109, 183, 1) 0%, rgba(22, 79, 152, 1) 65%, rgba(43, 59, 146, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.common-heading p{
+    color: #5c5c5c;
+}
+
+.common-btn{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    transition: all .2s ease;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.common-btn:hover {
+    color: #fff;
+    background-color: rgba(74, 159, 61, 1);
+}
+
+.common-btn i{
+    margin-right: 10px;
+}
+
+
+/* header css start */
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    padding: 0px 20px;
+}
+
+header{
+    position: relative;
+    background-image: url('images/bg-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.carousel-item-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-content: center;
+    align-items: center;
+}
+
+.carousel-item-inner img{
+    width: 100%;
+}
+
+.carousel-item-inner h1{
+    font-family: headingFont;
+    font-size: 78px;
+    line-height: 1;
+    padding-left: 40px;
+}
+
+.menu a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.yellow-dot, .green-dot, .orange-dot{
+        position: absolute;
+    left: 400px;
+    top: 100px;
+    z-index: 15;
+    visibility: visible;
+}
+
+.yellow-dot-inner, .green-dot-inner, .orange-dot-inner{
+    z-index: 15;
+    background-color: rgb(247, 148, 29);
+    color: rgb(255, 255, 255);
+    width: 33px;
+    height: 34px;
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: none;
+    filter: none;
+    opacity: 1;
+}
+
+.green-dot{
+    left: 541px;
+    top: 477px;
+}
+
+.green-dot-inner{
+    background-color: #8dc63f;
+    color: rgb(255, 255, 255);
+    width: 14px;
+    height: 14px;
+}
+
+.orange-dot{
+    top: 350px;
+    right: 30px;
+    left: auto;
+}
+
+.orange-dot-inner{
+    background-color: #f1592a;
+    color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+    color: #f1592a !important;
+}
+
+/* header css end */
+
+
+/* programs section css start */
+
+.program-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.program-item{
+    background-color: #fff;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: all .2s ease;
+    overflow: hidden;
+}
+
+.program-item:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.program-item:hover img{
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
+.program-desc{
+    padding: 20px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.program-img img{
+    width: 100%;
+    height: 250px;
+}
+
+.program-img{
+    overflow: hidden;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url('images/program1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.program-desc h5{
+    font-family: smallHeadingFont;
+    font-weight: 500;
+}
+
+.program-desc p{
+    color: #5c5c5c;
+}
+
+/* programs section css end */
+
+/* about section css start */
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.about-desc p{
+    color: #5c5c5c;
+    text-align: center;
+    width: 85%;
+    margin: 0px auto;
+}
+
+.about-section a{
+    margin-top: 30px;
+    background-color: #5f8a24;
+    color: #fff;
+}
+
+/* about section css end */
+
+
+/* vision mission section css start */
+
+.vision-mission-section{
+    background-image: url('images/vision-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+}
+
+.vision-mission-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.left-vm img{
+    width: 100%;
+}
+
+.right-vm{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-header{ 
+    background-color: #5f8a24;
+    color: #fff;
+    border: none;
+}
+
+.card-header h5{
+    font-family: smallHeadingFont;
+    text-transform: capitalize;
+}
+
+.card-body ul{
+    padding-left: 20px;
+}
+
+.card-body ul li{
+    list-style-type: upper-roman;
+}
+
+.right-vm .common-heading{
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    margin: auto;
+}
+
+.right-vm .common-heading h2{
+    text-align: start;
+}
+
+/* vision mission section css end */
+
+
+/* how we help section css start */
+
+.hwh-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    margin-top: 30px;
+}
+
+.how-we-help-section .common-heading{
+    text-align: start;
+    width: 100%;
+    align-items: start;
+    margin: auto;
+}
+
+.right-hwh img{
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+
+.how-we-help-section .common-heading h2{
+    text-align: start;
+}
+
+.tabs-desktop{
+      border-bottom: 2px solid #bbbaba;
+}
+
+  .TabButton {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 30px 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .TabButton img{
+    width: 30px;
+  }
+
+  .TabButton h6{
+    font-family: headingFont;
+    color: #8d8d8d;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .TabButtonSelected h6{
+      color: #f1592a;
+      font-weight: 600;
+    text-align: center;
+  }
+  .d-chart-n {
+    display: none;
+  }
+  
+  .d-chart-show {
+    display: block;
+  }
+
+  .d-chart-show h6{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .tab-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tab-content h3{
+    font-family: smallHeadingFont;
+    font-weight: 500;
+  }
+
+  .timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 2px dotted #f1592a;
+}
+
+.timeline-step {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  left: 10px;
+  top: -28px;
+  width: 14px;
+  height: 14px;
+  background: #f1592a;
+  border-radius: 50%;
+}
+
+.content h5 {
+  color: #191919;
+  margin-bottom: 10px !important;
+}
+
+.content p {
+  color: #5c5c5c;
+  width: 80%;
+}
+
+  .tabs-mobile{
+    display: none;
+    }
+
+.menuDiv{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffbc13;
+    height: 42px;
+    overflow: hidden;
+    z-index: 1111;
+    position: relative;
+    background: #fff;
+}
+
+button.menuDivDefault, button.menuDivOptions{
+    padding: 8px 20px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: #1a1a1a;
+}
+
+button.menuDivOptions{
+    color: #1a1a1a;
+}
+
+.mH{
+    height: max-content;
+}
+
+#menuDefaultImg{
+    width: 20px;
+}
+
+/* how we help section css end */
+
+
+/* contact form section css start */
+
+.contact-form-inner{
+    background-image: url('images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.left-contact{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left-contact h2{
+    font-family: headingFont;
+    font-size: 42px;
+    color: #cecece;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input[type='text'], #contact-form input[type='tel'], #contact-form input[type='email'], #contact-form textarea{
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    color: #5c5c5c;
+    padding: 12px 25px;
+    outline: none;
+    border: none;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder{
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+.submit-btn input{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+}
+
+/* contact form section css end */
+
+
+/* footer css start */
+
+footer{
+    background-color: #f2efea;
+    color: #191919;
+}
+
+.footer-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-item h4{
+    font-family: headingFont;
+}
+
+.footer-item img{
+    width: 120px;
+}
+
+.footer-item ul li{
+    padding: 5px 0px;
+    list-style-type: none;
+}
+
+.footer-item ul li a:hover{
+    text-decoration: underline;
+    color: #191919;
+}
+
+.footer-item .contact{
+    color: #f1592a;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-item .contact, .contact-link .contact{
+    color: #f1592a;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-item .contact span, .contact-link .contact span{
+    border-radius: 50%;
+    border: 1px solid #f1592a;
+    padding: 8px;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons li i{
+    font-size: 22px;
+}
+
+.lower-footer{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid #bbbaba;
+}
+
+/* footer css end */
